@@ -22,9 +22,12 @@ Blockchain Explorer
 
 1. *Starting the project*
    
-   - touch .env      *(open .env file and paste your Moralis Api and MONGODB_URL there (refer to  .env.sample))*
+   - touch .env
+     ## *(open .env file and paste your Moralis Api and MONGODB_URL there (refer to  .env.sample)*
    - cd backend && npm i && tsc -b
-   - npm run start   *(Your backend will up and running at http://localhost:8000/)*
+   - npm run start
+     
+     ## *(Your backend will up and running at http://localhost:8000/)*
     
    *for stopping the backend server*
    - pm2 kill
@@ -36,9 +39,16 @@ Blockchain Explorer
    - pm2 list
 
    *For frontend*
-   - cd frontend && npm i && npm run dev  *(Frontend will be ap and running at http://localhost:5173/)*
+   - cd frontend && npm i && npm run dev
 
-   ## Demo Video
+     ## *(Frontend will be ap and running at http://localhost:5173/)*
+
+   ## demo video
+   https://github.com/Av3001/Blockchain-Explorer/assets/113854539/772759ae-84f3-44ba-93d0-b5ccca5c43ba
+
+
+   ## Full working Video link
+    https://drive.google.com/file/d/195MidrgadirjD3qcJVBVVj-WBoPZD7-q/view?usp=drive_link
 
 
 
