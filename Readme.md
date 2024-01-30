@@ -38,7 +38,12 @@ Blockchain Explorer
    *For frontend*
    - cd frontend && npm i && npm run dev  *(Frontend will be ap and running at http://localhost:5173/)*
 
-   ## Demo Video
+   ## demo video
+   https://github.com/Av3001/Blockchain-Explorer/assets/113854539/772759ae-84f3-44ba-93d0-b5ccca5c43ba
+
+
+   ## Full working Video link
+    https://drive.google.com/file/d/195MidrgadirjD3qcJVBVVj-WBoPZD7-q/view?usp=drive_link
 
 
 
