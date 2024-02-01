@@ -11,7 +11,7 @@ interface TokenBalance {
     [key:string]:any;
 }
 const Section = () => {
-  const baseUrl:string="http://localhost:8000/api/v1"
+  const baseUrl:string="https://block-expo.onrender.com"
   const address:string = '0x1f9090aaE28b8a3dCeaDf281B0F12828e676c326'; 
   const [transactions, setTransactions] = useState<Transaction[]>([]);
   const [tokenBalances, setTokenBalances] = useState<TokenBalance[]>([]);
@@ -40,15 +40,7 @@ const Section = () => {
       fetchAddressDetails();
     }
   }, [address]);
-  
-// const renderProperties = (obj: { [key: string]: any }) => {
-//     return Object.keys(obj).map((key) => (
-//       <p key={key} className="mb-2">
-//         <span className="font-bold">{key}:</span> {String(obj[key])}
-//       </p>
-//     ));
-//     };
-  
+    
   
   return (
       <div className="container mx-auto mt-8 flex ">
