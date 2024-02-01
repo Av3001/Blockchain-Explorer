@@ -102,12 +102,14 @@ export const getTransactionsFromDb=async (req: express.Request, res: express.Res
     try {
         const {address} = req.params
         if (!address) {
-            res.status(400).json("Please Provide address")
+            res.status(400).json({message:"Please Provide address"})
+            return
         }
         const address_details=await AddressDetails.findOne({address:address}).select("-_id -address")
 
         if (!address_details){
             res.status(404).send("No Transactions details Present,Please check your Address")
+            return
         }
         res.status(200).json({address_details,"Transactions successfully fetched":String})
 
@@ -122,11 +124,13 @@ export const getERC20BalanceFromDb=async (req: express.Request, res: express.Res
         const {address} = req.params
         if (!address) {
             res.status(400).send("Please Provide address")
+            return
         }
         const balance_details=await ERC20Details.findOne({address:address}).select("-_id -address")
 
         if (!balance_details){
             res.status(404).send("No balance details Present ,Please check your Address")
+            return
         }
         res.status(200).json({balance_details,"Balance successfully fetched":String})
 
@@ -141,11 +145,13 @@ export const getNativeBalanceFromDb=async (req: express.Request, res: express.Re
         const {address} = req.params
         if (!address) {
             res.status(400).send("Please Provide address")
+            return 
         }
         const balance_details=await NativeDetails.findOne({address:address}).select("-_id -address")
 
         if (!balance_details){
             res.status(404).send("No balance details Present ,Please check your Address")
+            return
         }
         res.status(200).json({balance_details,"Balance successfully fetched":String})
 
