@@ -54,7 +54,7 @@ Blockchain Explorer
 
 ## Public Hosted Link
 
-Visit the live demo of the project at [Vercel]() 
+Visit the live demo of the project at [Vercel](https://blockchain-explorer-three.vercel.app/) 
 
 ## Approach
 
