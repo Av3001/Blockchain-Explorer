@@ -11,7 +11,7 @@ interface TokenBalance {
     [key:string]:any;
 }
 const Section = () => {
-  const baseUrl:string="https://block-expo.onrender.com/api/vi"
+  const baseUrl:string="https://block-expo.onrender.com/api/v1"
   const address:string = '0x1f9090aaE28b8a3dCeaDf281B0F12828e676c326'; 
   const [transactions, setTransactions] = useState<Transaction[]>([]);
   const [tokenBalances, setTokenBalances] = useState<TokenBalance[]>([]);
